@@ -1,0 +1,22 @@
+---
+
+12 November 2016
+---
+
+
+```{r, echo=FALSE,warning = FALSE}
+
+library(leaflet)
+link<- c ("<a href='http://www.marinabaysands.com/museum/exhibitions-and-events.html'> Singapore Artscience Museum</a>")
+
+Singporearts<-data.frame(
+  		 lat=c(1.2863),
+		         lng=c(103.8593))
+Singporearts %>%
+leaflet() %>%
+addTiles() %>%
+addMarkers (popup = link ) 
+
+
+```
+
